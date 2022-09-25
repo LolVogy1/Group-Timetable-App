@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "5043618922",
+    "firebase_url": "https://group-timetable-3ae91.firebaseio.com",
+    "project_id": "group-timetable-3ae91",
+    "storage_bucket": "group-timetable-3ae91.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5043618922:android:788b12b4a551c0cc6f7613",
+        "android_client_info": {
+          "package_name": "com.example.grouptimetable"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "5043618922-mkq8pifositvhpjcv8oe0emqnqt96rna.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKD2W2ZH3T3XanMBPckF8WdnTX7EQ09Ik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "5043618922-mkq8pifositvhpjcv8oe0emqnqt96rna.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

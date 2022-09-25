@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEvent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarevent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+    <TextView
+        android:id="@+id/EventName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@id/toolbarevent"
+        android:textSize="20sp"
+        android:text="@string/event_name" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/NameInput"
+        android:layout_below="@id/EventName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/NameField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/event_text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/EventDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@id/NameInput"
+        android:textSize="20sp"
+        android:text="@string/event_day" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EventDay"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/EventTime"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@id/spinner"
+        android:textSize="20sp"
+        android:text="@string/event_time"></TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TimeStartInput"
+        android:layout_below="@id/EventTime">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/startinputfield"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/event_start" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/EventTo"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/EventTime"
+        android:textSize="20sp"
+        android:text="@string/to"
+        android:layout_toRightOf="@id/TimeStartInput">
+
+    </TextView>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TimeEndInput"
+        android:layout_below="@+id/EventTime"
+        android:layout_toRightOf="@+id/EventTo">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/endinputfield"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/event_end" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TimeStartInput"
+        android:text="@string/submit" />
+
+
+</RelativeLayout>

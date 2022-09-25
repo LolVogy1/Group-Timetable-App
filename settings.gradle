@@ -1,0 +1,2 @@
+rootProject.name='Group Timetable'
+include ':app'

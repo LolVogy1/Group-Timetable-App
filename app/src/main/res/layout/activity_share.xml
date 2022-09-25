@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Share">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarshare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+    <TextView
+    android:id="@+id/sharetext"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" android:layout_below="@+id/toolbarshare"
+    android:textSize="32sp"
+    android:layout_centerHorizontal="true"
+    android:text="Your timetable code is:"
+    />
+    <TextView
+        android:id="@+id/mysharecode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sharetext"
+        android:textSize="32sp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/entershare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mysharecode"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:text="Enter a code to connect with others:"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/codeinputlayout"
+        android:layout_below="@+id/entershare"
+        android:layout_centerHorizontal="true"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/codeinputfield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Enter code here" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonsubmitcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@+id/codeinputlayout"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

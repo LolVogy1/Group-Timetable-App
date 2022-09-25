@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Group Timetable User Guide</title>
+    <meta name=“viewport” content=“width=device-width, initialscale=1”>
+</head>
+
+<body>
+<h1>Group Timetable User Guide</h1>
+<p>The group timetable app functions as an individual timetabling app, while allowing
+you to share timetables with other users to find times when you are all free.</p>
+<p>While you can share your code with an unlimited number of users, keep in mind that
+the more users you share with the less likely you are to have any free times available, so 
+it is recommended to only share with a small group of users.</p>
+<h2>Logging in</h2>
+<p>The login screen allows you to enter a username and password, and then either sign in
+or create a new account if one does not already exist. As an example use "eee" for both username
+and password to login </p>
+<img src="login.PNG" style="width:250px;height:600px;">
+
+<h2>Main Menu</h2>
+<p>The main menu will be the main access point for the app. It allows you to select the timetable of the day
+you wish to see as well as add/import events to your timetable and share your code with others.</p>
+<p>It will also display the usernames of other users that you are currently sharing with.<p>
+<img src="mainShare.PNG" style="width:250px;height:600px;">
+
+<h3>Add an event</h3>
+<p>You can enter the name of the event, select the day of the event and enter the start and end times.
+Times should be between 0-23 (midnight-11pm) and for simplicity only the exact hour can be entered (e.g 
+9:30 is not allowed)</p>
+<img src="add event.PNG" style="width:250px;height:600px;">
+
+<h3>Share your code</h3>
+<p>The app will display your own code and allow you to enter the codes of other users. You cannot
+enter your own code or those that you have already entered</p>
+<img src="enterCode.PNG" style="width:250px;height:600px;">
+
+<h3>import a timetable</h3>
+<p>The app will ask for permission to read and write to storage. Granting permission will allow you 
+to go to the file manager to read a text file. This should be stored in /Downloads in external storage. 
+If using an emulator files can be dragged into the android device home screen from your pc</p>
+
+<p>The structure of the text file for is as follows: <br>
+Day-Event-Start-End<br>
+There should only be one event per line. An example file should be provided</p>
+<img src="import.PNG" style="width:250px;height:600px;">
+
+<h2>Timetable</h2>
+<p>The timetable of the selected day will be shown, along with any times that all users are free</p>
+<img src="timetableShare.PNG" style="width:250px;height:600px;">
+
+
+</body>
+</html>
+

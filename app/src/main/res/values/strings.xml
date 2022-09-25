@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Group Timetable</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_button">Add Event</string>
+    <string name="add_event">AddEvent</string>
+    <string name="event_name">Event Name</string>
+    <string name="event_text">Event Name</string>
+    <string name="event_day">Day</string>
+    <string name="event_time">Time</string>
+    <string name="event_start">Start</string>
+    <string name="event_end">End</string>
+    <string name="to">To</string>
+    <string name="submit">Submit</string>
+
+
+</resources>
